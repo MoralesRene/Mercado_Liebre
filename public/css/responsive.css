@@ -1,0 +1,214 @@
+/*Tablet*/
+@media (min-width:361px) {
+    /*header bloque sup*/
+    header{
+        padding: 15px;
+        padding-bottom: 5px;
+    }
+    header li{
+        margin: 5px 0px;
+    }
+    .bloque-sup{
+        max-width: 769px;
+        padding: 0px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #logo{
+        width: 30%;
+        margin: 0px;
+        padding: 0px;
+    }
+    #mensaje{
+        width:36%;
+        text-align: end;
+        margin:0px;
+    }
+    .buscador{
+        width: 30%;
+    }
+     /*barra nav*/
+    .barra-nav{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        gap: 5px;
+    }
+    .barra-nav ul{
+        display: flex;
+        padding: 0px;
+        align-items: center;
+        margin-bottom: 0px;
+        justify-content: space-between;
+    }
+    .barra-nav li{
+        text-align: center;
+        font-size: 14px;
+    }
+    .list{
+        width: 45%;
+    }
+    /*ICONO MENU*/
+    .burger-menu{
+        display: none;
+    }
+    /*Prueba carrusel*/
+    #next_img, #banner{
+        height: 150px;
+    }
+    /*Main articulos*/
+    main section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    h2{
+        text-align: center;
+    }
+
+    article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100); 
+        width: 40%;
+    }
+    main h4{
+        display: block;
+    }
+    body{
+        font-size: 16px;
+    }
+    .informacion{
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        width: 100%
+    }
+    .informacion i{
+        position: absolute;
+        background: white;
+        right: 20px;
+        top: -15px;
+        font-size: 16px;
+    }
+    .precio{
+        width: 30%;
+    }
+    .descuento{
+        width: 70%;
+        font-size: 18px;
+        padding-left: 1rem;
+    }
+    footer div{
+        padding-top: 20px;
+    }
+    /****************register*************/
+    #form-register{
+        width: 50%;
+    }
+    .form_top{
+        width: 100%;
+    }
+    .form_bot button{
+        width: 20%;
+    }
+    #reset{
+        width: 20%;
+    }
+}
+/*Desktop*/
+@media (min-width:769px){
+    /*header bloque sup*/
+    .bloque-sup{
+        max-width: none;
+        padding: 0px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #logo{
+        width:25%
+    }
+    #mensaje{
+        width:30%;
+        text-align: center;
+        margin:0px;
+        font-size: 16px;
+    }
+    #barra{
+        text-align: start;
+        outline: none;
+    }
+    header .boton{
+        left: 93%;
+    }
+    /*header bloque nav*/
+    .barra-nav li{
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    .list{
+        width: 30%;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .list li a{
+        margin-right: 5px;
+    }
+    .carrusel{
+        height: auto;
+    }
+    #next_img, #banner{
+        height: 250px;
+    }
+    /* main section*/
+    main section{
+        column-gap: 50px;
+    }
+    main article{
+        width: 20%;
+        box-shadow: none;
+    }
+    .precio{
+        width: 30%;
+        font-size: 16px;
+    }
+    .descuento{
+        width: 70%;
+        font-size: 16px;
+        padding-left: 30px;
+        line-height: 22px;
+    }
+    .informacion h4{
+        position: absolute;
+        bottom: 20px;
+        opacity: 0;
+        transition: all 1s, opacity .1ms ease;
+
+    }
+    article:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100); 
+    }
+    article:hover h4{
+        position: relative;
+        bottom: 0px;
+        opacity: 1;
+        color: black;
+    }
+    /*Footer*/
+    footer{
+        width: 95%;
+    }
+    footer p{
+        font-size: 18px;
+    }
+    footer div{
+        padding: 0px;
+        padding-top: 20px;
+    }
+    .copy{
+        margin-bottom: 0px;
+    }
+    /********************Register.html************/
+    #form-register{
+        max-width: 30%;
+    }
+}
