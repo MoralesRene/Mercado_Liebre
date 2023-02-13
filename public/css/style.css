@@ -11,6 +11,9 @@ body{
     font-family: 'Roboto', sans-serif;
     background-color:#ebebeb;
 }
+main{
+    margin: 20px auto;
+}
 /* Header */
 header{
     background-color: #EAC926;;
@@ -40,9 +43,10 @@ header{
 .bloque-sup{
     display: flex;
     justify-content: space-between;
-    max-width: 360px;
+    width: 100%;
     flex-wrap: wrap;
     padding: 15px;
+    align-items: center;
 }
 header input{
     border-color: transparent;
@@ -91,37 +95,22 @@ ul:first-child{
 /* banner*/
 /*Prueba carrusel*/
 .carrusel{
-    position: relative;
     overflow: hidden;
-
-}
-#banner{
-    position: relative;
-    width:100%;
-    height: 75px;
-    top: 0;
-    right: 0;
-    transition: all 1.2s;
-
-}
-#next_img{
-    position: absolute;
     width: 100%;
-    height: 75px;
-    top: 0;
-    left: 100%;
-    transition: all 1.2s;
-
 }
-.carrusel:hover > #next_img{
-    position: relative;
-    top: 0;
-    left: 0;
+.slider{
+    width: 200%;
+    display: flex;
+    height: auto;
+    animation: slide 14s linear infinite;
 }
-.carrusel:hover > #banner{
-    position: absolute;
-    top: 0;
-    right: 100%;
+.slider img{
+    width:100vw;
+    height: 125px;
+}
+@keyframes slide {
+    0%, 40%{margin-left: 0% ;}
+   50%, 90%{margin-left: -100%;}
 }
 /*main*/ 
 main section{
@@ -171,9 +160,9 @@ main h4{
 #icon1, #icon2,#icon3{
     color: #1259c3;
     border-radius: 3px;
-    width: 30px;
     font-size: 2em;
     margin-bottom: 10px;
+    transition: transform 500ms;
 }
 footer {
     width: 95%;
@@ -184,7 +173,7 @@ footer {
 footer h2{
     margin: 0px;
 }
-footer div{
+footer .foot_p{
     text-align: center;
     padding: 10% 10% 0% 10%;
 }
@@ -206,7 +195,9 @@ footer div{
     flex-wrap: wrap;
     justify-content: center;
     row-gap: 20px;
-
+    padding: 20px 10px;
+    border-radius: 5px;
+    background-color: #cbcbcb;
 }
 .form_top{
     display: flex;
@@ -281,8 +272,11 @@ footer div{
 }
 /********Login.html*************/
 main>form{
-    margin: auto;
+    margin:  30px auto;
     width: 80%;
+    padding: 20px 10px;
+    border-radius: 5px;
+    background-color: #cbcbcb;
 }
 .form_login{
     display: flex;
@@ -291,11 +285,34 @@ main>form{
     margin: 20px 0px;
     row-gap: 20px;
 }
+.form_login>h2{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 0px;
+}
 .form_login input{
     font: 12px;
     line-height: 26px;
     border: transparent;
     outline: none;
     border-radius: 3px;
+    padding: 5px 8px; 
 }
+.form_login button{
+    width: 40%;
+    margin: auto;
+    border-radius: 5px;
+    padding: 5px 0px;
+    background: black;
 
+}
+.form_login button a{
+    font-size: 14px;
+    font-weight: 700;
+}
+.form_login button a:link, .form_login button a:visited{
+    color: white;
+}
+.form_login button:hover{
+    background-color: #0022AA;
+}
