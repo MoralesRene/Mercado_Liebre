@@ -176,12 +176,158 @@
     }
     /* main section*/
     main{
-        width: 80%;
+        width: 90%;
         margin: 30px auto;
     }
     main section{
         column-gap: 50px;
         height: 360px;
+        width: 100%;
+    }
+    main article{
+        width: 20%;
+        box-shadow: none;
+        background-color: white;
+        padding: 15px 15px 0px 15px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0px;
+        height: 340px;
+        transition: all .7s ease, height .3s;
+
+    }
+    .precio{
+        width: 30%;
+        font-size: 16px;
+        text-align: start;
+    }
+    .descuento{
+        width: 70%;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: end;
+        padding-left: 0px;
+    }
+    .informacion{
+        padding:10px 0 0 0 ;
+    }
+    .informacion i{
+        transition: .7s;
+    }
+    .informacion h4{
+        opacity: 0;
+        position: absolute;
+        top: 40px;
+        transition: .5s ;
+    }
+    article:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100); 
+        height: 360px;
+    }
+    article:hover i{
+        transform: rotate(-90deg);
+    }
+    article:hover h4{
+        margin-bottom: 0;
+        margin-top: 0;
+        opacity: 1;
+        top: 70px;
+    }
+    /*Footer*/
+    footer{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        width: 100%;
+    }
+    footer p{
+        font-size: 18px;
+        width: 80%;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .foot{
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        margin: auto;
+    }
+    footer .foot_p{
+        padding: 15px;
+    }
+    .foot_p p{
+        margin: auto;
+    }
+    #icon1:hover, #icon2:hover,#icon3:hover{
+        color: rgb(59, 145, 230);
+        transform: scale(1.2);
+    }
+    /********************Register.html************/
+    #form-register{
+        max-width: 30%;
+    }
+     /***********Login****************/
+     main>form{
+        width: 40%;
+        margin: 130px auto;
+    }
+    .form_login button{
+        width: 20%;
+    }
+}
+@media(min-width:1025px){
+    /*header bloque sup*/
+    .bloque-sup{
+        width: 80%;
+        padding: 0px;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+    }
+    .barra-nav{
+        width: 80%;
+        margin: auto;
+    }
+    #logo{
+        width:25%
+    }
+    #mensaje{
+        width:30%;
+        text-align: end;
+        margin:0px;
+        font-size: 16px;
+    }
+    #barra{
+        text-align: start;
+        outline: none;
+    }
+    header .boton{
+        left: 93%;
+    }
+    /*header bloque nav*/
+    .barra-nav li{
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    .list{
+        width: 30%;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .list li a{
+        margin-right: 5px;
+    }
+    .carrusel img{
+        height: 300px;
+    }
+    /* main section*/
+    main{
+        width: 80%;
+        margin: 30px auto;
+    }
+    main section{
+        column-gap: 50px;
+        height: 380px;
     }
     main article{
         width: 20%;
@@ -215,7 +361,7 @@
     .informacion h4{
         opacity: 0;
         position: absolute;
-        top: 40px;
+        top: 20px;
         transition: .5s ;
     }
     article:hover{
@@ -229,7 +375,7 @@
         margin-bottom: 0;
         margin-top: 0;
         opacity: 1;
-        top: 70px;
+        top: 50px;
     }
     /*Footer*/
     footer{
